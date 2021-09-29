@@ -54,5 +54,18 @@ const multiplicar = (numero1: number, numero2: number): number => {
 
 console.log(multiplicar(2, 3));
 
+interface Usuario {
+    nome: string;
+    idade: number;
+    email: string;
+}
+
+// objetos
+
+let usuario: Usuario = {
+  nome : "Fulano",
+  idade : 22,
+  email : "jakdajkdakjdksajksd"
+};
 
 
