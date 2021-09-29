@@ -11,7 +11,7 @@
 
 */
 
-interface Funcionario {
+type Funcionario = {
   nome: string;
   supervisoes: string[];
   anosDeContratação: number[];
