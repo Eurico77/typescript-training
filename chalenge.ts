@@ -35,3 +35,11 @@ const funcionario: Funcionario = {
 console.log(funcionario.baterPonto(10));
 
 
+// union types
+
+let nota: number | string;
+
+nota = 10;
+console.log(nota);
+nota = '10';
+console.log(nota);
