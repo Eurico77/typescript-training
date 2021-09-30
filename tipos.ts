@@ -20,6 +20,7 @@ console.log(array);
 const hobbies: string[] = ["futebol", "basquete", "natação"];
 console.log(hobbies);
 
+//  tuplas
 const tuple: [string, number] = ["futebol", 22];
 console.log(tuple);
 
@@ -69,3 +70,4 @@ let usuario: Usuario = {
 };
 
 
+const a = {};
