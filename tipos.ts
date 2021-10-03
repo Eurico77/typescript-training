@@ -71,3 +71,5 @@ let usuario: Usuario = {
 
 
 const a = {};
+console.log();
+

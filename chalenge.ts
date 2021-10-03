@@ -20,7 +20,7 @@ type Funcionario = {
 
 const funcionario: Funcionario = {
   nome: 'Joãzinho',
-  supervisoes: ['Administração', 'Gestão de Projetos', 'Gestão de Projetos'],
+  supervisoes: ['Administração', 'Gestão de Projetos', 'Gestão de rh'],
   anosDeContratação: [2016, 2017, 2018],
   baterPonto(hora: number): string {
 
