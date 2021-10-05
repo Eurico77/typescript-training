@@ -17,5 +17,7 @@ namespace Geometria {
   }
 }
 
+export let raio: number = 5.4;
+
 console.log(Geometria.PI.areaCirc(10));
 console.log(PI.areaRet(10, 20));
