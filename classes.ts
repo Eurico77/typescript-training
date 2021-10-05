@@ -1,9 +1,6 @@
 class Data {
-  constructor(public dia: number, public mes: number, public ano: number) {
-    this.dia = dia;
-    this.mes = mes;
-    this.ano = ano;
-  }
+    constructor(public dia: number, public mes: number, public ano: number) {
+    }
 
   formatada(): string {
     return `${this.dia}/${this.mes}/${this.ano}`;
@@ -17,7 +14,7 @@ class Data {
     return this.mes;
   }
 
-  getAno(): number {    
+  getAno(): number {
     return this.ano;
   }
 
