@@ -7,7 +7,8 @@ namespace NProduto {
     [propName: string]: any; // propriedade dinâmica
 
     // métodos
-    calcularDesconto(): number;
+    // metodos de uma interface não precisam ser implementados dentro da interface
+    calcularDesconto(): number | undefined;
   }
 
   function mostrarProduto(produto: IProduto) {
