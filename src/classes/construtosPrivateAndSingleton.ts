@@ -2,17 +2,20 @@
 // construtor privado é um construtor que não pode ser instanciado
 // por fora da classe
 
+// singleton é um construtor que só pode ser instanciado uma vez e 
+// a instancia é retornada sempre que for chamado o construtor 
+
 // construtor privado
-class Singleton {
-  private static instance: Singleton; 
+class Connection {
+  private static instance: Connection; 
 
   private constructor() {}
 
-  static getInstance(): Singleton {
-    if (!Singleton.instance) {
-      Singleton.instance = new Singleton();
+  static getInstance(): Connection {
+    if (!Connection.instance) {
+      Connection.instance = new Connection();
     }
-    return Singleton.instance;
+    return Connection.instance;
   } 
 
   public someMethod(): string {
@@ -20,8 +23,8 @@ class Singleton {
   }
 }
 
-const instanceA = Singleton.getInstance();
-const instanceB = Singleton.getInstance();
+const instanceA = Connection.getInstance();
+const instanceB = Connection.getInstance();
 
 console.log(instanceA.someMethod());
 console.log(instanceB.someMethod());
