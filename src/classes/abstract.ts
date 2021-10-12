@@ -19,7 +19,6 @@ class Cachorro extends Animal {
   respirar() {  
     console.log("Cachorro respirando...");
   }
-  andar() {}
 }
 
 const cachorro = new Cachorro();
@@ -43,11 +42,13 @@ class PagamentoCartao extends Pagamento {
 
 class PagamentoBoleto extends Pagamento {
   pagar() {
-    return 123;
+    return 223.45;
   }
 }
 
 const pagamento: Pagamento = new PagamentoCartao();
 console.log(pagamento.getValorPago());
+
 const pagamento2 = new PagamentoBoleto();
 console.log(pagamento2.getValorPago());
+

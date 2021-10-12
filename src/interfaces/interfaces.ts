@@ -1,11 +1,12 @@
 // 
 namespace NProduto {
+
+  
   interface IProduto {
-    nome?: string | undefined; // union type (string ou undefined) 
+    nome?: string | undefined | any; // union type (string ou undefined) 
     preco: number; // ? indica que o atributo é opcional
     desconto: number;
     [propName: string]: any; // propriedade dinâmica
-
     // métodos
     // metodos de uma interface não precisam ser implementados dentro da interface
     calcularDesconto(): number | undefined;
@@ -28,39 +29,8 @@ namespace NProduto {
   };
 
   mostrarProduto(produto);
-  
-
 }
 
-// herança
+// herança de interfaces
 
-namespace Heranca {
-  
-  interface A {
-    a(): void;
-  }
 
-  interface B {
-    b(): void;
-  }
-
-  interface C extends A, B {
-    c(): void;
-  }
-}
-
-// interface Ipessoa {
-//   nome: string;
-//   idade: number;
-
-//   // métodos
-//   dizerNome(nome: string): string {
-//     return 'ola';
-//   }
-// }
-
-abstract class Teste {
-   dizerNome(nome: string): string {
-    return 'óla';
-  }
-}
