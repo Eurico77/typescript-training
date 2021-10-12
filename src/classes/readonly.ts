@@ -3,17 +3,19 @@
 
 // readonly
 class Aviao {
-    readonly modelo: string;
+
     readonly prefixo: string;
 
-    constructor(modelo: string, prefixo: string) {
+    constructor(
+        public readonly modelo: string,
+        prefixo: string) {
         this.modelo = modelo;
         this.prefixo = prefixo;
     }
-} 
+}
 
 const turboHelice = new Aviao('Tu-114', 'PT-ABC');
-turboHelice.modelo = 'DC-8'; // não pode ser alterado
-turboHelice.prefixo = 'PT-DEF'; // não pode ser alterado
+// turboHelice.modelo = 'DC-8'; // não pode ser alterado
+// turboHelice.prefixo = 'PT-DEF'; // não pode ser alterado
 console.log(turboHelice);
 
