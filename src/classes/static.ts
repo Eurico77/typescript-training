@@ -17,3 +17,17 @@ class Matematica {
 }
 
 console.log(Matematica.soma(1, 2));
+
+
+class Usuario {
+    static nome: string = 'João';
+
+    static idade: number = 27;
+
+    static mostrarNome(): void {
+        console.log(Usuario.nome);
+    }
+    
+}
+
+const use = Usuario.mostrarNome();
