@@ -48,3 +48,19 @@ namespace Heranca {
     c(): void;
   }
 }
+
+// interface Ipessoa {
+//   nome: string;
+//   idade: number;
+
+//   // métodos
+//   dizerNome(nome: string): string {
+//     return 'ola';
+//   }
+// }
+
+abstract class Teste {
+   dizerNome(nome: string): string {
+    return 'óla';
+  }
+}
